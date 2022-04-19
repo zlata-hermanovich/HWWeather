@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/city_menu"
+        android:title="@string/city_menu_navigation"
+        android:icon="@drawable/ic_city"
+        />
+    <item
+    android:id="@+id/weather_menu"
+    android:title="@string/weather_menu_navigation"
+    android:icon="@drawable/ic_sky"
+    />
+    <item
+        android:id="@+id/settings_menu"
+        android:title="@string/settings_menu_navigation"
+        android:icon="@drawable/ic_setting"
+        />
+
+</menu>

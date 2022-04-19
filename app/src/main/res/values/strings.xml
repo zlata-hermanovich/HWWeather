@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Weather</string>
+    <string name="city_menu_navigation">CITY</string>
+    <string name="weather_menu_navigation">WEATHER</string>
+    <string name="settings_menu_navigation">SETTINGS</string>
+    <string name="add_city_textview">ADD CITY</string>
+    <string name="button_day">DAYS</string>
+    <string name="button_hour">HOURS</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky_home"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.weather.WeatherFragment">
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:background="@drawable/ic_refresh"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:background="@color/white"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.example.myweather.ui.view.CustomView
+        android:id="@+id/customHome"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:buttonDay="day"
+        app:buttonHour="hour"
+        app:layout_constraintBottom_toTopOf="@id/weather_list_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weather_list_recycler"
+        android:layout_width="400dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="4dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customHome"
+        tools:listitem="@layout/item_weather" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="20dp"
+        tools:text="CITY"
+        android:textColor="@color/white"
+        android:textSize="@dimen/city_size_textview_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataTextView" />
+
+    <TextView
+        android:id="@+id/dataTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/data_size_textview_home"
+        tools:text="DATA and TIME"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/citySpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pictureSplashWandH">300dp</dimen>
+    <dimen name="add_city_size_textview">22sp</dimen>
+    <dimen name="data_size_textview_home">20sp</dimen>
+    <dimen name="city_size_textview_home">26sp</dimen>
+</resources>
